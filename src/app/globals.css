@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+
+/* Regular + Bold + Thin (Variable Normal) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/font-satoshi/Satoshi-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic Range (Variable Italic) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/font-satoshi/Satoshi-VariableItalic.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Apply Globally */
+body {
+  font-family: 'Satoshi', sans-serif;
+}
