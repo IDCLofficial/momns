@@ -8,7 +8,6 @@ interface CommissionerSectionProps {
   bio: string;
   details: string;
   buttonText: string;
-  buttonHref: string;
 }
 
 export default function CommissionerSection({
@@ -18,7 +17,6 @@ export default function CommissionerSection({
   bio,
   details,
   buttonText,
-  buttonHref,
 }: CommissionerSectionProps) {
   return (
     <section className="w-full bg-[#f4f8f9] h-auto md:h-[80vh] py-16 flex justify-center">

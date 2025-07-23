@@ -4,9 +4,9 @@ export default function SkillUpSection() {
   return (
     <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 py-8 px-4">
       {/* Left: Green Card */}
-     <div className="w-[90%] md:w-[40%]">
-        <img src="/images/imo-map.jpeg" alt="SkillUp Imo " />
-     </div>
+      <div className="w-[90%] md:w-[40%]">
+        <Image src="/images/imo-map.jpeg" alt="SkillUp Imo" width={600} height={400} className="object-cover rounded-xl" priority />
+      </div>
       {/* Right: Text and Buttons */}
       <div className="w-[90%] md:w-[55%] flex-1 flex flex-col justify-center items-start max-w-2xl px-2">
         <h2 className="text-5xl font-bold text-gray-900 mb-4 leading-tight">Strategic Goals (2025–2030)

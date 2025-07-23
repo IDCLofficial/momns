@@ -1,7 +1,6 @@
 import AboutMandateSection from "@/components/AboutMandateSection";
 import HeroSection from "@/components/HeroSection";
 import CommissionerSection from "@/components/CommissionerSection";
-import Image from "next/image";
 import QuickLinksSection from "@/components/QuickLinksSection";
 import SkillUpSection from "@/components/SkillUpSection";
 import LatestNewsSection from "@/components/LatestNewsSection";
@@ -48,7 +47,6 @@ Established through the restructuring of former commerce, industry, and natural 
         bio="Hon. Ernest Ibejiako serves as the Honourable Commissioner for Mines, Industry, and Natural Resources in Imo State, Nigeria. Appointed by Governor Hope Uzodinma, he is dedicated to driving sustainable development across the state's industrial and natural resource sectors."
         details="With a focus on responsible mining, industrial expansion, and job creation, Hon. Ibejiako champions policies that harness Imo State’s natural wealth for economic empowerment. His leadership aims to attract investments, modernize industries, and ensure environmental sustainability in resource management."
         buttonText="Our Team"
-        buttonHref="/about/team"
       />
       {/* Quick Links Section */}
       <div className="bg-white">

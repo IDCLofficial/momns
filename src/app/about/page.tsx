@@ -33,7 +33,6 @@ Over the years, successive governments in Imo State have recognized the importan
                 bio="As Commissioner for Industry, Mines, and Solid Minerals, Dr. Chimezie Amadi is a seasoned leader and policy advocate dedicated to bridging the industrial divide. Under his direction, the ministry has empowered thousands of citizens through training and expanded industrial services across Imo State."
                 details=""
                 buttonText="Learn More"
-                buttonHref="/about/team"
             />
             {/* Objectives Section */}
             <ObjectivesSection />
