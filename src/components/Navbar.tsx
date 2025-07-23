@@ -22,7 +22,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className={`relative w-full z-30 py-3 ${sidebarOpen ? 'bg-white' : 'bg-gradient-to-b from-[#3a2c1a]/80 to-[#232c39]/80'} lg:bg-gradient-to-b lg:from-[#3a2c1a]/80 lg:to-[#232c39]/80 lg:border-b lg:border-gray-300 lg:py-4`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 py-3 ${sidebarOpen ? 'bg-white' : 'bg-gradient-to-b from-[#3a2c1a]/80 to-[#232c39]/80'} lg:bg-gradient-to-b lg:from-[#3a2c1a]/80 lg:to-[#232c39]/80 lg:border-b lg:border-gray-300 lg:py-4`}>
       <div className="w-[90%] lg:w-[94%] mx-auto flex items-center justify-between h-full">
         <div className="flex items-center">
           <Link href="/">
@@ -55,7 +55,7 @@ export default function Navbar() {
           aria-label="Open menu"
           onClick={() => setSidebarOpen(true)}
         >
-          <svg width="32" height="32" fill="white" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg width="32" height="32" stroke="white" strokeWidth="2" viewBox="0 0 24 24" fill="none"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
         <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       </div>
