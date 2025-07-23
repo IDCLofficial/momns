@@ -2,46 +2,62 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react';
+import Sidebar from './Sidebar';
+
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'News', href: '/news' },
+  { label: 'Units', href: '/units' },
+  { label: 'Events', href: '/events' },
+  { label: 'Media', href: '/media' },
+  { label: 'Contact Us', href: '/contact-us' },
+];
 
 export default function Navbar() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const pathname = usePathname();
+
   return (
-    <nav className="w-full h-20 px-8 border-b border-gray-300 flex justify-center  backdrop-blur-md fixed top-0 left-0 z-50">
-      <div className="w-[94%] mx-auto flex items-center justify-between h-full">
+    <nav className={`relative w-full z-30 py-3 ${sidebarOpen ? 'bg-white' : 'bg-gradient-to-b from-[#3a2c1a]/80 to-[#232c39]/80'} lg:bg-gradient-to-b lg:from-[#3a2c1a]/80 lg:to-[#232c39]/80 lg:border-b lg:border-gray-300 lg:py-4`}>
+      <div className="w-[90%] lg:w-[94%] mx-auto flex items-center justify-between h-full">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/images/IMSG-Logo.svg" alt="logo" width={50} height={20} className='object-contain' />
           </Link>
         </div>
-        <div className=" font-satoshi space-x-6 gap-10 text-[16px] font-bold hidden md:flex">
-          <Link href="/" className="text-green-400 font-semibold hover:text-green-500 border-b-2 border-green-400 pb-1">
-            Home
-          </Link>
-          <Link href="/about" className="text-white hover:text-green-400">
-            About Us
-          </Link>
-          <Link href="/projects" className="text-white hover:text-green-400">
-            Projects
-          </Link>
-          <Link href="/news" className="text-white hover:text-green-400">
-            News
-          </Link>
-          <Link href="/units" className="text-white hover:text-green-400">
-            Units
-          </Link>
-          <Link href="/events" className="text-white hover:text-green-400">
-            Events
-          </Link>
-          <Link href="/media" className="text-white hover:text-green-400">
-            Media
-          </Link>
-          <Link href="/contact" className="text-white hover:text-green-400">
-            Contact Us
-          </Link>
+        <div className="font-satoshi space-x-6 gap-10 text-[16px] font-bold hidden lg:flex">
+          {navLinks.map((link) => {
+            const isActive =
+              link.href === '/'
+                ? pathname === '/'
+                : pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={
+                  isActive
+                    ? 'text-green-400 font-semibold hover:text-green-500 transition duration-300 ease-in-out border-b-2 border-green-400 pb-1'
+                    : 'text-white hover:text-green-400 transition duration-300 ease-in-out'
+                }
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
-        <button className="md:hidden p-2 rounded bg-gray-800 text-white">
-          {/* Mobile menu icon */}
-          ☰
+        <button
+          className="block lg:hidden absolute right-4 top-4 z-40"
+          aria-label="Open menu"
+          onClick={() => setSidebarOpen(true)}
+        >
+          <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
+        <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       </div>
     </nav>
   )
