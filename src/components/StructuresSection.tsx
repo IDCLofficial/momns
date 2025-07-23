@@ -64,7 +64,7 @@ export const StructuresSection = ({imgSrc}: StructuresSectionProps) => {
                     Our Structure
                 </h2>
                 <p className="text-white text-sm sm:text-base md:text-[1rem] mb-8 sm:mb-16 w-full sm:w-[80%] md:w-[40%] mx-auto">
-                    The Ministry is divided into specialized departments that collectively drive Imo's digital agenda
+                    The Ministry is divided into specialized departments that collectively drive Imo&apos;s digital agenda
                 </p>
 
                 {/* Main Image */}
