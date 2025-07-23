@@ -8,13 +8,13 @@ export default function UnitsPage() {
     <div className="bg-white">
      {/* Top Hero */}
      <TopHero
-                ministryName="Departments Driving Our Digital Vision"
+                ministryName="Departments Driving Our Vision"
                 titleLabel="Departments"
             />
       <UnitsTabsSection />
     
       <CTASection
-        heading="Join our mission to make Imo the digital heart of Nigeria"
+        heading="Join our mission to make Imo the Industrial heart of Nigeria"
         subtext=""
         buttonLabel="Contact Us"
         buttonHref="/contact-us"

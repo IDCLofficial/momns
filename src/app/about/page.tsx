@@ -42,7 +42,7 @@ Over the years, successive governments in Imo State have recognized the importan
             />
             {/* CTASection */}
             <CTASection
-                heading="Join our mission to make Imo the digital heart of Nigeria"
+                heading="Revolutionalizing Mining in Imo State"
                 buttonLabel="See Our Projects"
                 buttonHref="/projects"
             />

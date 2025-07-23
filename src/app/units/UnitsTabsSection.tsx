@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const departments = [
   {
@@ -85,7 +86,9 @@ export default function UnitsTabsSection() {
                 `}
                 onClick={() => setActiveIdx(idx)}
               >
+                 <AnimatedSection>
                 {dept.name}
+                </AnimatedSection>
               </button>
             </li>
           ))}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SkillUpSection() {
   return (
@@ -16,8 +17,12 @@ export default function SkillUpSection() {
 The Ministry has outlined ambitious yet attainable goals to transform Imo State’s industrial and mining landscape over the next five years.
         </p>
         <div className="flex flex-col lg:flex-row gap-4 mt-4">
-          <button style={{paddingTop: '.5rem', paddingBottom: '.5rem'}} className="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-2 rounded text-lg transition-colors min-w-[150px]">See More</button>
-          <button style={{paddingTop: '.5rem', paddingBottom: '.5rem'}} className="border border-green-700 text-green-700 font-semibold px-8 py-2 rounded text-lg hover:bg-green-50 transition-colors min-w-[180px]">Contact Us</button>
+          <Link href="/about" legacyBehavior>
+            <a style={{paddingTop: '.5rem', paddingBottom: '.5rem'}} className="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-2 rounded text-lg transition-colors min-w-[150px] text-center">See More</a>
+          </Link>
+          <Link href="/contact-us" legacyBehavior>
+            <a style={{paddingTop: '.5rem', paddingBottom: '.5rem'}} className="border border-green-700 text-green-700 font-semibold px-8 py-2 rounded text-lg hover:bg-green-50 transition-colors min-w-[180px] text-center">Contact Us</a>
+          </Link>
         </div>
       </div>
     </section>

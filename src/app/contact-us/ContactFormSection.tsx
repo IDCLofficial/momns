@@ -14,7 +14,7 @@ const ContactFormSection = () => {
   };
 
   return (
-    <div className="bg-[#222] text-white p-8 rounded shadow-lg w-full max-w-xl mx-auto">
+    <div className="bg-green-900 text-white p-8 rounded shadow-lg w-full max-w-xl mx-auto">
       <h2 className="text-2xl font-bold mb-2">LET&pos;S TALK HERE</h2>
       <p className="mb-6 text-gray-200 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       <form className="space-y-4" onSubmit={handleSubmit}>
@@ -24,7 +24,7 @@ const ContactFormSection = () => {
           placeholder="Your name"
           value={form.name}
           onChange={handleChange}
-          className="w-full px-4 py-2 rounded border border-gray-300 text-black focus:outline-none"
+          className="w-full px-4 py-2 rounded border bg-gray-200 border-gray-300 text-black focus:outline-none"
           required
         />
         <input
@@ -33,7 +33,7 @@ const ContactFormSection = () => {
           placeholder="Email address"
           value={form.email}
           onChange={handleChange}
-          className="w-full px-4 py-2 rounded border border-gray-300 text-black focus:outline-none"
+          className="w-full px-4 py-2 rounded border bg-gray-200 border-gray-300 text-black focus:outline-none"
           required
         />
         <textarea
@@ -41,7 +41,7 @@ const ContactFormSection = () => {
           placeholder="Message"
           value={form.message}
           onChange={handleChange}
-          className="w-full px-4 py-2 rounded border border-gray-300 text-black focus:outline-none min-h-[100px]"
+          className="w-full px-4 py-2 rounded border border-gray-300 bg-gray-200 text-black focus:outline-none min-h-[100px]"
           required
         />
         <button
