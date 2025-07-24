@@ -20,7 +20,6 @@ export default function Home() {
         overlayText="Imo State Ministry of Industry, Mines, and Solid Minerals"
         heading="Empowering Industry. "
         subheading="Harnessing Minerals. "
-        secondsubheading="Building Imo’s Economic Future."
         description="Harnessing natural resources, advancing industries, and empowering Imo citizens — through sustainable mining, industrial growth, and inclusive economic policies."
       />
       {/* About Mandate Section */}

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react';
 import Sidebar from './Sidebar';
+import OfficeHours from './OfficeHours';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -22,8 +23,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 py-3 ${sidebarOpen ? 'bg-white' : 'bg-gradient-to-b from-[#3a2c1a]/80 to-[#232c39]/80'} lg:bg-gradient-to-b lg:from-[#3a2c1a]/80 lg:to-[#232c39]/80 lg:border-b lg:border-gray-300 lg:py-4`}>
-      <div className="w-[90%] lg:w-[94%] mx-auto flex items-center justify-between h-full">
+    <nav className={`fixed top-0 left-0 w-full z-50 py-3 ${sidebarOpen ? 'bg-white' : 'bg-gradient-to-b from-[#3a2c1a]/80 to-[#232c39]/80'} lg:bg-gradient-to-b lg:from-[#3a2c1a]/80 lg:to-[#232c39]/80  lg:py-4`}>
+     
+      <div className="w-[90%] lg:w-full px-0 lg:px-10 mx-auto flex items-center justify-between h-full lg:border-b lg:border-gray-300 lg:py-4">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/images/IMSG-Logo.svg" alt="logo" width={50} height={20} className='object-contain' />
@@ -59,6 +61,8 @@ export default function Navbar() {
         </button>
         <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       </div>
+      <OfficeHours/>
+
     </nav>
   )
 }

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import AnimatedSection from './AnimatedSection';
+import { TypingText } from './TypingText';
 
 interface HeroSectionProps {
   overlayText: string;
   heading: string;
   subheading: string;
-  secondsubheading: string;
   description: string;
   backgroundImage: string; 
 }
@@ -14,13 +14,11 @@ export default function HeroSection({
   overlayText,
   heading,
   subheading,
-  secondsubheading,
   description,
   backgroundImage,
 }: HeroSectionProps) {
   return (
-    <section className="relative h-screen px-1 md:px-[3rem] flex flex-col justify-center bg-[url('/images/heroImage.png')] bg-cover bg-center
-      ">
+    <section className="relative h-screen px-1 md:px-[3rem] flex flex-col justify-center bg-[url('/images/heroImage.png')] bg-cover bg-center">
       {/* Dynamic Background image */}
       <Image
         src={backgroundImage}
@@ -47,8 +45,9 @@ export default function HeroSection({
             className="animate-fadeInUpDynamic text-[30px] sm:text-[40px] lg:text-[62px] md:text-5xl font-extrabold text-white leading-tight mb-4 mt-4"
           >
             {heading}<br />
-            {subheading} <br/>
-            {secondsubheading}
+            {subheading}   <br/>
+           
+            <TypingText />
           </h1>
         </AnimatedSection>
         <AnimatedSection delay={0.6}>
