@@ -15,8 +15,10 @@ const ContactFormSection = () => {
 
   return (
     <div className="bg-green-900 text-white p-8 rounded shadow-lg w-full max-w-xl mx-auto">
-      <h2 className="text-2xl font-bold mb-2">LET&pos;S TALK HERE</h2>
-      <p className="mb-6 text-gray-200 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <h2 className="text-2xl font-bold mb-2">CONNECT WITH US</h2>
+      <p className="mb-6 text-gray-200 text-sm">
+        We are happy to liaise with you and build a prosperous Imo State.
+      </p>
       <form className="space-y-4" onSubmit={handleSubmit}>
         <input
           type="text"

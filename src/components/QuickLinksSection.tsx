@@ -4,27 +4,27 @@ import React from "react";
 const links = [
   {
     title: "Projects",
-    description: "See how we’re digitally transforming Imo.",
+    description: "Transforming Imo State through industrial and solid mineral development.",
     image: "/images/about.jpg",
     href: "/projects",
   },
   {
     title: "Events",
-    description: "Join upcoming tech summits & training programs.",
+    description: "Join upcoming events and training programs.",
     image: "/images/about2.jpg",
     href: "/events",
   },
   {
-    title: "Media",
-    description: "Watch our journey in action.",
+    title: "News",
+    description: "Stay updated with the latest news and events.",
     image: "/images/about3.jpg",
-    href: "/media",
+    href: "/news",
   },
   {
-    title: "About Us",
-    description: "Who we are and what we stand for.",
+    title: "Departments",
+    description: "Explore our departments and their functions.",
     image: "/images/aboutUs1.png",
-    href: "/about",
+    href: "/departments",
   },
 ];
 

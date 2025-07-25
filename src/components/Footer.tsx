@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const info = {
     logo: "/images/IMSG-Logo.svg",
-    ministry: "Ministry of Industry, Mines & Natural Resources",
+    ministry: "Ministry of Industry, Mines & Solid Minerals",
     description: "The Imo State Ministry of Industry, Mines, and Solid Minerals was created by the administration of His Excellency, Distinguished Senator Hope Uzodinma: the Governor of Imo State to facilitate the transformation of Imo State ",
     quickLinks: [
         {
@@ -47,8 +47,8 @@ const info = {
             href: "tel:+2348033384910"
         },
         {
-            label: "Info@industrymines.im.gov.ng",
-            href: "mailto:Info@industrymines.im.gov.ng"
+            label: "commissioner.ind.solid.min@gmail.com",
+            href: "mailto:commissioner.ind.solid.min@gmail.com"
         },  
         {
             label: "Block 8, State Secretariat Complex, Owerri, Imo State, Nigeria",

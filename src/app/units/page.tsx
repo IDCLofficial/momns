@@ -14,9 +14,9 @@ export default function UnitsPage() {
       <UnitsTabsSection />
     
       <CTASection
-        heading="Join our mission to make Imo the Industrial heart of Nigeria"
-        subtext=""
-        buttonLabel="Contact Us"
+       heading="Building a Prosperous Imo Through Industry and Resources"
+       subtext="Join our mission to transform Imo State through responsible mining, industrial innovation, and inclusive growth."       
+        buttonLabel="Partner With Us"
         buttonHref="/contact-us"
       />
       <Footer />

@@ -24,10 +24,10 @@ export default function ContactUsPage() {
         <ContactImageSection />
       </section>
       <CTASection
-        heading="Ready to Experience the New Imo?"
-        subtext="Discover our vision for an inclusive, empowered, and connected state."
-        buttonLabel="Contact Us"
-        buttonHref="/contact-us"
+       heading="Building a Prosperous Imo Through Industry and Resources"
+       subtext="Join our mission to transform Imo State through responsible mining, industrial innovation, and inclusive growth."       
+buttonLabel="See Our Projects"
+  buttonHref="/projects"
       />
       <Footer />
     </main>

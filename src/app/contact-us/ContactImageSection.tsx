@@ -5,7 +5,7 @@ const ContactImageSection = () => (
   <div className="w-full flex justify-center py-8">
     <div className="w-full h-[450px] relative rounded overflow-hidden">
       <Image
-        src="/images/person-office-work-day.png"
+        src="/images/stock5.jpg"
         alt="Contact support"
         fill
         className="object-cover rounded"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const news = [
   {
@@ -49,7 +50,9 @@ export default function LatestNewsSection() {
           </div>
         ))}
       </div>
-      <button className="bg-green-700 hover:bg-green-800 text-white font-semibold px-12 py-3 rounded text-lg transition-colors">See More</button>
+      <Link href="/news">
+        <p className="bg-green-700 animate-bounce hover:bg-green-800 text-white font-semibold px-12 py-3 rounded text-lg transition-colors text-center block">See More</p>
+      </Link>
     </section>
   );
 } 

@@ -1,27 +1,83 @@
+import React from "react";
 import Image from "next/image";
 
-export default function ProjectsSection() {
+const projects = [
+  {
+    title: "Establishment of Industrial Parks",
+    description: "Development of modern industrial parks in key zones to attract investment, support manufacturing, and create jobs across Imo State.",
+    status: "active",
+  },
+  {
+    title: "Solid Minerals Mapping and Licensing",
+    description: "Comprehensive mapping and licensing of mineral-rich areas to encourage regulated mining and sustainable resource management.",
+    status: "active",
+  },
+  {
+    title: "SkillUp Imo Program for Mining and Industry",
+    description: "Training and empowering youths with technical and entrepreneurial skills tailored to the needs of the mining and industrial sectors.",
+    status: "active",
+  },
+  {
+    title: "Revitalization of Songhai Agricultural and Industrial Scheme",
+    description: "Rehabilitation and expansion of the Songhai Scheme in Nekede to boost agro-processing and industrial output.",
+    status: "closed",
+  },
+  {
+    title: "Public-Private Partnerships for Mineral Processing",
+    description: "Facilitating partnerships to establish mineral processing plants, adding value to Imo’s solid minerals before export.",
+    status: "active",
+  },
+  {
+    title: "Stakeholder Engagement for Mining Sector Reforms",
+    description: "Ongoing dialogue with host communities, miners, and regulatory agencies to ensure compliance, safety, and community benefits.",
+    status: "closed",
+  },
+];
+
+export default function Projects() {
+  const activeProjects = projects.filter(p => p.status === "active");
+  const closedProjects = projects.filter(p => p.status === "closed");
+
   return (
-    <section className="w-full py-16 bg-white flex flex-col lg:flex-row items-center gap-10 px-6 lg:px-20">
-      <div className="flex-1 flex flex-col gap-6">
-        <h2 className="text-3xl lg:text-4xl font-bold">Projects: Ministry of Industry and Solid Minerals</h2>
-        <p className="text-gray-700">The Ministry of Industry and Solid Minerals (MISM) is actively pursuing key projects to drive industrial development and sustainable mineral resource management across Imo State. Project updates, along with field photos of ministry personnel at work sites, will be published regularly to ensure transparency and community engagement.</p>
-        <ul className="list-disc ml-6 text-gray-700 space-y-2">
-          <li><b>Rehabilitation of Industrial Layouts:</b> Upgrading infrastructure and utilities within designated industrial layouts to attract investors and support MSMEs.</li>
-          <li><b>Construction of Mining Bays:</b> Establishing designated zones for safe, regulated mining operations to reduce environmental degradation.</li>
-          <li><b>Ban on Urban Mining Activities:</b> Enforcement of a total ban on indiscriminate urban mining, coupled with remediation of the Imo ecosystem damaged by illegal activities.</li>
-          <li><b>Development of Industrial Parks:</b> Creation of industrial parks across the three senatorial zones, with provision of roads, power, and water to catalyze economic activity.</li>
-          <li><b>Digital Revenue Management Partnership with IIRS:</b> Collaboration with the Imo Internal Revenue Service (IIRS) to digitize revenue collection and enhance transparency in the solid mineral and industrial sectors.</li>
-          <li><b>Stakeholder Engagement for Sector Regularization:</b> Continuous dialogue with host communities, miners, investors, and regulatory agencies to streamline operations and promote legal compliance.</li>
-        </ul>
-        <div className="flex gap-6 mt-6">
-          <Image src="/images/ocda.jpeg" alt="Project Field" width={120} height={80} className="rounded" />
-          <Image src="/images/iirs.jpeg" alt="Initiative" width={120} height={80} className="rounded" />
+    <section className="w-full py-16 flex flex-col items-center">
+      <div className="w-full md:w-[90vw] flex flex-col lg:flex-row">
+        {/* Text Content */}
+        <div className="flex-1 bg-white rounded-3xl shadow-lg p-8 flex flex-col justify-center">
+          <h1 className="text-3xl lg:text-4xl font-bold text-green-700 mb-6">Projects & Initiatives</h1>
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold mb-4 text-green-700">Active Projects</h2>
+            <div className="space-y-4">
+              {activeProjects.map((project, idx) => (
+                <div key={idx} className="p-4 bg-green-50 rounded-xl border-l-4 border-green-600 shadow-sm">
+                  <h3 className="font-semibold text-lg text-green-800 mb-1">{project.title}</h3>
+                  <p className="text-gray-700 text-sm">{project.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-gray-500">Closed Projects</h2>
+            <div className="space-y-4">
+              {closedProjects.map((project, idx) => (
+                <div key={idx} className="p-4 bg-gray-100 rounded-xl border-l-4 border-gray-400 shadow-sm">
+                  <h3 className="font-semibold text-lg text-gray-700 mb-1">{project.title}</h3>
+                  <p className="text-gray-600 text-sm">{project.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
-      </div>
-      <div className="flex-1 flex justify-center">
-        <div className="w-full max-w-md h-72 relative rounded-lg overflow-hidden">
-          <Image src="/images/stock1.jpg" alt="Projects" fill className="object-cover" />
+        {/* Images Side */}
+        <div className="flex-1 flex flex-col items-center justify-center lg:w-[20%] gap-6 py-4">
+          <div className="w-full h-56 max-w-xs relative rounded-3xl overflow-hidden shadow-lg">
+            <Image src="/images/monsm-news.jpg" alt="Projects 1" fill className="object-cover" />
+          </div>
+          <div className="w-full h-56 max-w-xs relative rounded-3xl overflow-hidden shadow-lg">
+            <Image src="/images/about2.jpg" alt="Projects 2" fill className="object-cover" />
+          </div>
+          <div className="w-full h-56 max-w-xs relative rounded-3xl overflow-hidden shadow-lg">
+            <Image src="/images/about3.jpg" alt="Projects 3" fill className="object-cover" />
+          </div>
         </div>
       </div>
     </section>

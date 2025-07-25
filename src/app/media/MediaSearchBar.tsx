@@ -10,27 +10,30 @@ interface MediaSearchBarProps {
 const MediaSearchBar: React.FC<MediaSearchBarProps> = ({ placeholder = "Search", onSearch }) => {
   const [query, setQuery] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (onSearch) onSearch(query);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
+    if (onSearch) onSearch(e.target.value);
   };
 
   return (
-    <form className="flex w-full max-w-xl mx-auto" onSubmit={handleSubmit}>
+    <div className="flex w-full max-w-xl mx-auto">
       <input
         type="text"
         placeholder={placeholder}
         value={query}
-        onChange={e => setQuery(e.target.value)}
+        onChange={handleChange}
         className="flex-1 border border-gray-300 rounded-l text-white px-4 py-2 focus:outline-none"
       />
       <button
-        type="submit"
+        type="button"
         className="bg-green-600 text-white px-8 py-2 rounded-r font-semibold"
+        tabIndex={-1}
+        disabled
+        style={{ opacity: 0.5, pointerEvents: 'none' }}
       >
         Search
       </button>
-    </form>
+    </div>
   );
 };
 

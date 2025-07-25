@@ -1,9 +1,11 @@
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 const teamMembers = [
   {
     name: "Hon. Ernest Ibejiako",
-    role: "Commissioner for Mines, Industry, and Natural Resources",
+    role: "Commissioner for Mines, Industry, and Solid Minerals",
     image: "/images/team.jpg",
     bio: "Appointed by Governor Hope Uzodinma, Hon. Ibejiako is dedicated to driving sustainable development across Imo State's industrial and natural resource sectors."
   },
@@ -29,11 +31,12 @@ const teamMembers = [
 
 export default function TeamPage() {
   return (
+    <>
     <section className="w-full min-h-screen bg-gray-50 py-16 px-4">
       <div className="max-w-5xl mx-auto text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-green-800 mb-4">Meet Our Leadership Team</h1>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          The Ministry of Industry, Mines & Natural Resources is led by a dedicated team of professionals committed to sustainable development, innovation, and community empowerment in Imo State.
+          The Ministry of Industry, Mines & Solid Minerals is led by a dedicated team of professionals committed to sustainable development, innovation, and community empowerment in Imo State.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -49,5 +52,13 @@ export default function TeamPage() {
         ))}
       </div>
     </section>
+    <CTASection
+       heading="Building a Prosperous Imo Through Industry and Resources"
+       subtext="Join our mission to transform Imo State through responsible mining, industrial innovation, and inclusive growth."       
+        buttonLabel="Partner With Us"
+        buttonHref="/contact-us"
+      />
+      <Footer />
+      </>
   );
 } 

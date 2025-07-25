@@ -11,12 +11,11 @@ export default function Projects() {
             <SecondTopHero headingText="Empowering Imo’s Industrial and Mining Future" />
             {/* SkillUp Project */}
             <OngoingProjects />
-            {/* Digital section */}
-            <DigitalAgendaSection />
+            
             <CTASection
-        heading="Ready to Experience the New Imo?"
-        subtext="Discover our vision for an inclusive, empowered, and connected state."
-        buttonLabel="Contact Us"
+        heading="Building a Prosperous Imo Through Industry and Resources"
+        subtext="Join our mission to transform Imo State through responsible mining, industrial innovation, and inclusive growth."       
+        buttonLabel="Partner With Us"
         buttonHref="/contact-us"
       />
       {/* Footer */}

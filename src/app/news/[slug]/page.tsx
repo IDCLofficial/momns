@@ -4,19 +4,19 @@ import NewsBodySection from "./NewsBodySection";
 
 const latestNews = [
   {
-    title: "IMO STATE LAUNCHES MAJOR BROADBAND EXPANSION TO...",
-    date: "MAY 30, 2025",
-    img: "/images/homeImage1.png",
+    title: "Imo State Unveils New Industrial Park to Boost Local Manufacturing",
+    date: "MAY 15, 2025",
+    img: "/images/initiatives.png",
   },
   {
-    title: "IMO STATE LAUNCHES MAJOR BROADBAND EXPANSION TO...",
-    date: "MAY 30, 2025",
-    img: "/images/homeImage1.png",
+    title: "Solid Minerals Sector Reform: Imo Licenses 20 New Mining Operators",
+    date: "APRIL 28, 2025",
+    img: "/images/ocda.jpeg",
   },
   {
-    title: "IMO STATE LAUNCHES MAJOR BROADBAND EXPANSION TO...",
-    date: "MAY 30, 2025",
-    img: "/images/homeImage1.png",
+    title: "SkillUp Imo Program Trains 5,000 Youths for Industrial Jobs",
+    date: "APRIL 10, 2025",
+    img: "/images/skillup.png",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function NewsDetailPage() {
 {/* Main Content */}
 <div>
   <p className="text-gray-700 mb-6">
-    The Imo State Ministry of Industry, Mines, and Natural Resources is leading the charge in transforming the state into a hub of industrial activity and sustainable resource management. With renewed focus on industrialization, job creation, and mineral resource optimization, the ministry is attracting investments and empowering local entrepreneurs across the state.
+    The Imo State Ministry of Industry, Mines, and Solid Minerals is leading the charge in transforming the state into a hub of industrial activity and sustainable resource management. With renewed focus on industrialization, job creation, and mine resource optimization, the ministry is attracting investments and empowering local entrepreneurs across the state.
   </p>
   <p className="text-gray-700 mb-6">
     Under the leadership of Governor Hope Uzodinma, the Ministry has launched strategic initiatives to develop industrial clusters, revive moribund factories, and formalize the solid minerals sector. Through public-private partnerships and regulatory reforms, Imo State is opening new frontiers for growth in agro-processing, manufacturing, mining, and SME development.
