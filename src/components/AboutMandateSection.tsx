@@ -54,8 +54,9 @@ export default function AboutMandateSection({
         </div>
         {/* BOTTOM SECTION */}
         <AnimatedSection delay={0.3} yOffset={100}>
-        <div className="flex gap-4">
-            <div className="relative w-full md:w-[680px] h-[260px] rounded-lg overflow-hidden">
+        <div className="flex flex-wrap gap-4 pb-2">
+            <div className="relative w-[90vw] sm:w-[220px] md:w-[340px] lg:w-[680px] h-[180px] sm:h-[200px] md:h-[220px] lg:h-[260px] rounded-lg overflow-hidden transition-transform duration-300 group hover:scale-105 hover:shadow-2xl">
+              
               <Image
                 src={image1}
                 alt="Mandate Image 1"
@@ -71,7 +72,7 @@ export default function AboutMandateSection({
                 </span>
               </div>
             </div>
-            <div className="relative w-[340px] h-[260px] rounded-lg overflow-hidden">
+            <div className="relative w-[90vw] sm:w-[140px] md:w-[220px] lg:w-[340px] h-[180px] sm:h-[200px] md:h-[220px] lg:h-[260px] rounded-lg overflow-hidden transition-transform duration-300 group hover:scale-105 hover:shadow-2xl">
               <Image
                 src={image2}
                 alt="Mandate Image 2"
@@ -85,7 +86,7 @@ export default function AboutMandateSection({
               </span>
               </div>
             </div>
-            <div className="relative w-[340px] h-[260px] rounded-lg overflow-hidden">
+            <div className="relative w-[90vw] sm:w-[140px] md:w-[220px] lg:w-[340px] h-[180px] sm:h-[200px] md:h-[220px] lg:h-[260px] rounded-lg overflow-hidden transition-transform duration-300 group hover:scale-105 hover:shadow-2xl">
               <Image
                 src={image3}
                 alt="Mandate Image 2"

@@ -6,6 +6,7 @@ import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
 import SkillUpSection from "@/components/SkillUpSection";
+import MissionVisionCard from "@/components/DigitalNews";
 
 export default function AboutUs() {
     return (
@@ -36,6 +37,7 @@ Over the years, successive governments in Imo State have recognized the importan
                 buttonText="Learn More"
             />
             <SkillUpSection />
+            <MissionVisionCard />
             {/* Objectives Section */}
             <ObjectivesSection />
             

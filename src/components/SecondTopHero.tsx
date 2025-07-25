@@ -7,7 +7,7 @@ interface SecondTopHeroProps {
 
 export default function SecondTopHero({ headingText }: SecondTopHeroProps) {
   return (
-    <section className="relative w-full h-[50vh] flex items-center justify-center">
+    <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center">
       <Image
         src="/images/stock6.jpg"
         alt="Hero"
