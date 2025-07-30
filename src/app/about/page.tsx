@@ -1,10 +1,11 @@
 import { SectionHero } from "@/components/SectionHero";
 import { ObjectivesSection } from "@/components/ObjectivesSection";
-import CommissionerSection from "@/components/CommissionerSection";
 import { StructuresSection } from "@/components/StructuresSection";
 import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
+import MissionVisionCard from "./MissionVisionCard";
+import TeamPage from "./Team";
 
 export default function AboutUs() {
     return (
@@ -25,15 +26,9 @@ Over the years, successive governments in Imo State have recognized the importan
                 imgSrc="/images/about.jpg"
                 altText="Our Story - Imo State Ministry of Industry, Mines, and Solid Minerals conference event"
             />
-            {/* Commissioner Section */}
-            <CommissionerSection
-                imageSrc="/images/commisioner.jpg"
-                imageAlt="Hon. Commissioner Dr. Ernest Ibejiako"
-                title="Hon. Commissioner Dr. Ernest Ibejiako (LLB.BL.LLM.KSC.JP)"
-                bio="As Commissioner for Industry, Mines, and Solid Minerals, Dr. Chimezie Amadi is a seasoned leader and policy advocate dedicated to bridging the industrial divide. Under his direction, the ministry has empowered thousands of citizens through training and expanded industrial services across Imo State."
-                details=""
-                buttonText="What we do"
-            />
+            <MissionVisionCard/>
+            <TeamPage/>
+          
             {/* Objectives Section */}
             <ObjectivesSection />
             {/* Structures Section */}

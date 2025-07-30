@@ -16,7 +16,7 @@ const latestNews = [
   {
     title: "SkillUp Imo Program Trains 5,000 Youths for Industrial Jobs",
     date: "APRIL 10, 2025",
-    img: "/images/skillup.png",
+    img: "/images/about2.jpg",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function NewsDetailPage() {
   
   <div className="w-full flex justify-center my-8">
     <div className="w-full max-w-md rounded-xl overflow-hidden">
-      <Image src="/images/homeImage1.png" alt="News Detail" width={600} height={300} className="object-cover w-full h-64" />
+      <Image src="/images/aboutUs1.png" alt="News Detail" width={600} height={300} className="object-cover w-full h-64" />
     </div>
   </div>
 

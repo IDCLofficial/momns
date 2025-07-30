@@ -1,6 +1,7 @@
 import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
+import ServiceCard from "./ServiceCard";
 
 export default function Services() {
     return (
@@ -8,15 +9,16 @@ export default function Services() {
             
             {/* Top Hero */}
             <TopHero
-                ministryName="Ministry of Industry, Mines, and Solid Minerals"
+                ministryName="What we do"
                 titleLabel="Services"
             />
-         
+            <ServiceCard />
+            
             {/* CTASection */}
             <CTASection
-                heading="Revolutionalizing Mining in Imo State"
-                buttonLabel="See Our Projects"
-                buttonHref="/projects"
+                heading="Contact Us"
+                buttonLabel="Contact Us"
+                buttonHref="/contact"
             />
             {/* Footer */}
             <Footer />

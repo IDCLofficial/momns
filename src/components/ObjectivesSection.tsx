@@ -1,5 +1,3 @@
-import AnimatedSection from "./AnimatedSection";
-
 export const ObjectivesSection = () => {
     const objectives = [
         {
