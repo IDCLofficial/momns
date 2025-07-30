@@ -32,7 +32,7 @@ Over the years, successive governments in Imo State have recognized the importan
                 title="Hon. Commissioner Dr. Ernest Ibejiako (LLB.BL.LLM.KSC.JP)"
                 bio="As Commissioner for Industry, Mines, and Solid Minerals, Dr. Chimezie Amadi is a seasoned leader and policy advocate dedicated to bridging the industrial divide. Under his direction, the ministry has empowered thousands of citizens through training and expanded industrial services across Imo State."
                 details=""
-                buttonText="Learn More"
+                buttonText="What we do"
             />
             {/* Objectives Section */}
             <ObjectivesSection />
