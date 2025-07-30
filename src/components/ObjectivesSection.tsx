@@ -40,10 +40,9 @@ export const ObjectivesSection = () => {
     return (
       <section className="w-full bg-white py-20">
             <div className="max-w-6xl mx-auto px-8">
-                {/* Imo State Ministry of Women Affairs and Social Welfare Objectives */}
                 <div className="mb-16">
                     <h2 className="text-2xl sm:text-3xl md:text-[43px] font-medium text-center mb-12">
-                        Imo State Ministry of Women Affairs and Social Welfare objectives
+                        Imo State Ministry of Industry, Mines and Solid Minerals
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {objectives.map((objective, index) => (
