@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimatedSection from './AnimatedSection2';
 
 interface CommissionerSectionProps {
   imageSrc: string;
@@ -35,6 +36,8 @@ export default function CommissionerSection({
         </div>
 
         {/* Text Content */}
+        <AnimatedSection>
+
         <div className="flex-1 flex flex-col items-start w-[80vw] md:w-full">
           <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-900">
             {title}
@@ -50,6 +53,7 @@ export default function CommissionerSection({
             {buttonText}
           </Link>
         </div>
+        </AnimatedSection>
       </div>
     </section>
   );

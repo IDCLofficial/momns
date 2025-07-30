@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedSection from "./AnimatedSection";
 
 export default function SkillUpSection() {
   return (
@@ -9,6 +10,7 @@ export default function SkillUpSection() {
         <Image src="/images/IMSG-Logo.svg" alt="SkillUp Imo" width={600} height={400} className="object-cover rounded-xl" priority />
       </div>
       {/* Right: Text and Buttons */}
+      <AnimatedSection>
       <div className="w-[90%] md:w-[55%] flex-1 flex flex-col justify-center items-start max-w-2xl px-2">
         <h2 className="text-5xl font-bold text-gray-900 mb-4 leading-tight">Strategic Objectives (2025â€“2030)
         </h2>
@@ -25,6 +27,7 @@ The Ministry has outlined ambitious yet attainable goals to transform Imo Stateâ
           </Link>
         </div>
       </div>
+      </AnimatedSection>
     </section>
   );
 } 
