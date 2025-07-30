@@ -10,9 +10,10 @@ import OfficeHours from './OfficeHours';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
+  { label: 'Services', href: '/services' },
   { label: 'Projects', href: '/projects' },
   { label: 'News', href: '/news' },
-  { label: 'Units', href: '/units' },
+  { label: 'Departments', href: '/departments' },
   { label: 'Events', href: '/events' },
   { label: 'Media', href: '/media' },
   { label: 'Contact Us', href: '/contact-us' },
@@ -53,7 +54,7 @@ export default function Navbar() {
           })}
         </div>
         <button
-          className="block lg:hidden absolute right-4 top-4 z-40"
+          className="block lg:hidden absolute right-4 top-4 z-40 cursor-pointer "
           aria-label="Open menu"
           onClick={() => setSidebarOpen(true)}
         >
