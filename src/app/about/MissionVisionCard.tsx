@@ -11,13 +11,13 @@ export default function MissionVisionCard() {
           <div className="bg-green-50 rounded-xl p-6 shadow-sm w-full">
             <h3 className="text-xl font-semibold text-green-800 mb-2">Mission Statement</h3>
             <p className="text-gray-700 text-base">
-              To ensure sustainable access to safe and clean water for all residents of Imo State through effective management of water resources, infrastructure development, and community engagement, thereby enhancing public health, economic growth, and environmental sustainability.
+              To be the leading catalyst for sustainable industrialization and responsible mineral development in Imo State—creating compelling investment opportunities, transforming livelihoods, and positioning the state as a hub for safe, compliant, and growth-oriented industries.
             </p>
           </div>
           <div className="bg-green-50 rounded-xl p-6 shadow-sm w-full">
             <h3 className="text-xl font-semibold text-green-800 mb-2">Vision Statement</h3>
             <p className="text-gray-700 text-base">
-              To be a leading institution in the sustainable management of water resources, ensuring universal access to potable water, promoting water conservation, and fostering resilient communities for present and future generations in Imo State.
+            To foster a vibrant ecosystem of small, medium, and large industries while harnessing Imo’s solid mineral wealth through transparent regulation, stakeholder engagement, and environmental stewardship—generating revenue, creating employment, reducing poverty, and driving regional economic transformation.
             </p>
           </div>
         </div>
