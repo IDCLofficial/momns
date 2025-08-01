@@ -4,20 +4,12 @@ import NewsBodySection from "./NewsBodySection";
 
 const latestNews = [
   {
-    title: "Imo State Unveils New Industrial Park to Boost Local Manufacturing",
-    date: "MAY 15, 2025",
-    img: "/images/initiatives.png",
-  },
-  {
-    title: "Solid Minerals Sector Reform: Imo Licenses 20 New Mining Operators",
-    date: "APRIL 28, 2025",
-    img: "/images/ocda.jpeg",
-  },
-  {
-    title: "SkillUp Imo Program Trains 5,000 Youths for Industrial Jobs",
-    date: "APRIL 10, 2025",
-    img: "/images/about2.jpg",
-  },
+    
+  title: "Imo Commissioner For Industry, Mines, And Solid Minerals, Ibejiako, Vows To Reform Mining Sector",
+    description: "Rt.Hon. Barr. Ernest Ibejiako, the Imo State Commissioner for Industry, Mines, and Solid Minerals, has pledged to restore sanity and tackle the challenges facing the mining sector. He made this commitment during a maiden stakeholders’ meeting with miners in Imo State over the weekend.",
+    date: "30th May 2025",
+    img: "/images/monsm-news1.jpg",
+  }
 ];
 
 export default function NewsDetailPage() {
@@ -34,7 +26,7 @@ export default function NewsDetailPage() {
   </div>
 </div>
 <div className="text-center">
-  <h1 className="text-2xl md:text-3xl font-bold mb-2">Imo State Drives Economic Growth Through Industrialization and Solid Mineral Development</h1>
+  <h1 className="text-2xl md:text-3xl font-bold mb-2">Imo Commissioner For Industry, Mines, And Solid Minerals, Ibejiako, Vows To Reform Mining Sector</h1>
 </div>
 
 {/* Main Content */}
