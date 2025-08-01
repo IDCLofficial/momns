@@ -42,8 +42,8 @@ Established through the restructuring of former commerce, industry, and natural 
       <CommissionerSection
         imageSrc="/images/commisioner.jpg"
         imageAlt="Hon. Ernest Ibejiako, Minister of Mines, Industry in Imo State"
-        title="Hon. Ernest Ibejiako (LLB.BL.LLM.KSC.JP)"
-        bio="Hon. Ernest Ibejiako serves as the Honourable Commissioner for Mines, Industry, and Solid Minerals in Imo State, Nigeria. Appointed by Governor Hope Uzodinma, he is dedicated to driving sustainable development across the state's industrial and solid mineral sectors."
+        title="Rt. Hon. Barr. Ernest Ibejiako (LLB.BL.LLM.KSC.JP)"
+        bio="Rt. Hon. Barr. Ernest Ibejiako serves as the Honourable Commissioner for Mines, Industry, and Solid Minerals in Imo State, Nigeria. Appointed by Governor Hope Uzodinma, he is dedicated to driving sustainable development across the state's industrial and solid mineral sectors."
         details="With a focus on responsible mining, industrial expansion, and job creation, Hon. Ibejiako champions policies that harness Imo State’s solid mineral wealth for economic empowerment. His leadership aims to attract investments, modernize industries, and ensure environmental sustainability in resource management."
         buttonText="What we Do"
       />

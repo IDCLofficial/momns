@@ -1,7 +1,5 @@
 import CTASection from "@/components/CTASection";
-import DigitalAgendaSection from "@/components/DigitalNews";
 import Footer from "@/components/Footer";
-import SecondTopHero from "@/components/SecondTopHero";
 import { TopHero } from "@/components/TopHero";
 import OngoingProjects from "@/components/projects/Projects";
 
@@ -11,7 +9,7 @@ export default function Projects() {
         
             <TopHero
 titleLabel="Projects"
-ministryName="Empowering Imo’s Industrial and Mining Future"
+ministryName="Empowering Imo's Industrial and Mining Future"
             />
             {/* SkillUp Project */}
             <OngoingProjects />
