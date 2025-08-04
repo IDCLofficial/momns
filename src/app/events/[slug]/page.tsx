@@ -4,6 +4,7 @@ import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
+import { TopHero } from "@/components/TopHero";
 
 const event = {
   title: "Imo State Mining Stakeholders Conference 2025",
@@ -17,11 +18,11 @@ const event = {
     "The Imo State Mining Stakeholders Conference 2025 brings together miners, regulators, community leaders, and investors to discuss the future of mining in Imo State. The conference will feature keynote addresses from top government officials, technical sessions on mining regulations, and interactive workshops on sustainable mining practices. Attendees will have the opportunity to network with industry leaders, participate in breakout sessions focused on community engagement and environmental stewardship, and learn about the latest innovations in mining technology. The event aims to foster collaboration, promote best practices, and ensure that mining activities contribute positively to the state's economy while protecting the environment.",
 };
 
-const speakers = Array(4).fill({
-  name: "JAPHET GILBERT",
+const speakers = {
+  name: "Rt. Hon Ernest Ibejiako",
   role: "Lead Speaker",
   img: "/images/commissioner2.png",
-});
+};
 
 function Countdown({ targetDate }: { targetDate: string }) {
   const [timeLeft, setTimeLeft] = useState<{days: number, hours: number, minutes: number, seconds: number}>({days: 0, hours: 0, minutes: 0, seconds: 0});
@@ -75,9 +76,11 @@ export default function EventDetailPage() {
   return (
     <div className="bg-white">
       {/* Hero Title */}
-      <section className="relative w-full h-[220px] flex items-center justify-center bg-gradient-to-br from-green-900/80 to-black/80">
-        <h1 className="text-white text-3xl md:text-5xl font-bold text-center z-10">{event.title}</h1>
-      </section>
+      <TopHero
+titleLabel="Conference"
+ministryName={event.title}
+
+      />
       {/* Event Image & Countdown */}
       <section className="relative w-full max-w-6xl mx-auto flex flex-col items-center pt-10 pb-6 px-4">
         <div className="w-full max-w-4xl relative">
@@ -103,15 +106,13 @@ export default function EventDetailPage() {
       <section className="w-full max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-xl font-bold mb-6">SPEAKERS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {speakers.map((sp, idx) => (
-            <div key={idx} className="flex flex-col items-center bg-white rounded-xl shadow p-4">
+            <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
               <div className="w-40 h-48 relative mb-3 rounded-lg overflow-hidden">
-                <Image src={sp.img} alt={sp.name} fill className="object-cover" />
+                <Image src={speakers .img} alt={speakers.name} fill className="object-cover" />
               </div>
-              <span className="text-green-700 font-semibold text-xs mb-1">{sp.role}</span>
-              <span className="font-bold text-lg text-center">{sp.name}</span>
+              <span className="text-green-700 font-semibold text-xs mb-1">{speakers.role}</span>
+              <span className="font-bold text-lg text-center">{speakers.name}</span>
             </div>
-          ))}
         </div>
       </section>
       <CTASection
