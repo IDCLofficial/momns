@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { newsList } from "./newsData";
+import { TopHero } from "@/components/TopHero";
 
 export default function NewsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -17,6 +18,10 @@ export default function NewsPage() {
 
   return (
     <div className="bg-white">
+       <TopHero
+titleLabel="News"
+ministryName="Showcasing Our Works"
+            />
       <NewsSearchBar />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-4 pb-16">
         <NewsSidebar
