@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 
 const sentences = [
     "Imo is 3R",
-    "Empowering Innovation Across Imo State",
-    "Driving Industrial Growth for the Future",
+    "Empowering Innovation ",
+    "Driving Industrial Growth",
     "Empowering Communities through Shared Prosperity"
 ];
 

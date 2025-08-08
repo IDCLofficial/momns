@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NewsHeroSection from "./NewsHeroSection";
 import NewsBodySection from "./NewsBodySection";
+import Link from "next/link";
 
 const latestNews = [
   {
@@ -8,7 +9,7 @@ const latestNews = [
   title: "Imo Commissioner For Industry, Mines, And Solid Minerals, Ibejiako, Vows To Reform Mining Sector",
     description: "Rt.Hon. Barr. Ernest Ibejiako, the Imo State Commissioner for Industry, Mines, and Solid Minerals, has pledged to restore sanity and tackle the challenges facing the mining sector. He made this commitment during a maiden stakeholders’ meeting with miners in Imo State over the weekend.",
     date: "30th May 2025",
-    img: "/images/monsm-news1.jpg",
+    img: "/images/monsm-news.jpg",
   }
 ];
 
@@ -18,11 +19,20 @@ export default function NewsDetailPage() {
       {/* Section 1: Hero + Body */}
       <section className="relative w-full pb-[180px]"> {/* pb-[180px] ensures body does not overlap next section */}
         <NewsHeroSection/>
+        <div className="m-10 ">
+
+<Link
+href="/"
+className="my-6 px-4 py-2 bg-green-700 hover:bg-green-800 animate-bounce text-white font-semibold rounded-lg shadow transition"
+>
+Go Back Home
+</Link>
+</div>
         <NewsBodySection>
           {/* Title & Meta */}
           <div className="relative z-10 w-full flex justify-center pb-2">
   <div className="w-full max-w-3xl rounded-xl overflow-hidden shadow-lg">
-    <Image src={'/images/homeImage1.png'} alt="News Hero" width={900} height={400} className="object-cover w-full h-[260px] md:h-[320px]" />
+    <Image src={'/images/monsm-news.jpg'} alt="News Hero" width={900} height={400} className="object-cover w-full h-[260px] md:h-[320px]" />
   </div>
 </div>
 <div className="text-center">
@@ -40,7 +50,7 @@ export default function NewsDetailPage() {
   
   <div className="w-full flex justify-center my-8">
     <div className="w-full max-w-md rounded-xl overflow-hidden">
-      <Image src="/images/aboutUs1.png" alt="News Detail" width={600} height={300} className="object-cover w-full h-64" />
+      <Image src="/images/monsm-news1.jpg" alt="News Detail" width={600} height={300} className="object-cover w-full h-64" />
     </div>
   </div>
 

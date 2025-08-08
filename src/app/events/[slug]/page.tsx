@@ -21,7 +21,7 @@ const event = {
 const speakers = {
   name: "Rt. Hon Ernest Ibejiako",
   role: "Lead Speaker",
-  img: "/images/commissioner2.png",
+  img: "/images/commisioner.jpg",
 };
 
 function Countdown({ targetDate }: { targetDate: string }) {
@@ -107,7 +107,7 @@ ministryName={event.title}
         <h2 className="text-xl font-bold mb-6">SPEAKERS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
-              <div className="w-40 h-48 relative mb-3 rounded-lg overflow-hidden">
+              <div className="w-40 h-60 relative mb-3 rounded-lg overflow-hidden">
                 <Image src={speakers .img} alt={speakers.name} fill className="object-cover" />
               </div>
               <span className="text-green-700 font-semibold text-xs mb-1">{speakers.role}</span>
