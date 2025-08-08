@@ -47,12 +47,12 @@ const info = {
     ],
     contact: [
         {
-            label: "+234 803 123 4567",
-            href: "tel:+2348031234567"
+            label: "+2349134039664",
+            href: "tel:+2349134039664"
         },
         {
-            label: "commissioner.ind.solid.min@gmail.com",
-            href: "mailto:commissioner.ind.solid.min@gmail.com"
+            label: "",
+            href: ""
         },  
         {
             label: "Block 8, State Secretariat Complex, Owerri, Imo State, Nigeria",
