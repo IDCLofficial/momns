@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebookF, FaTwitter, FaInstagra
 
 const contactInfo = {
   address: "Imo State Ministry of Industry, Mines, and Solid Minerals, State Secretariat Complex, Port Harcourt Road, New Owerri, Imo State, Nigeria.",
-  email: "",
+  email: "info.imominofmism@gmail.com",
   phone: "+2349134039664",
   socials: [
     { icon: <FaFacebookF />, href: "#" },
