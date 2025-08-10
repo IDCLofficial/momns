@@ -51,8 +51,8 @@ const info = {
             href: "tel:+2349134039664"
         },
         {
-            label: "",
-            href: ""
+            label: "info.imominofmism@gmail.com",
+            href: "emailto:info.imominofmism@gmail.com"
         },  
         {
             label: "Block 8, State Secretariat Complex, Owerri, Imo State, Nigeria",
