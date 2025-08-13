@@ -21,8 +21,8 @@ const info = {
             href: "/news"
         },
         {
-            label: "Units",     
-            href: "/units"
+            label: "Departments",     
+            href: "/departments"
         },
         {
             label: "Events",
@@ -53,8 +53,13 @@ const info = {
             href: "tel:+2349134039664"
         },
         {
+<<<<<<< HEAD
             label: "info.imominofindustry@gmail.com",
             href: "mailto:info.imominofindustry@gmail.com"
+=======
+            label: "info.imominofmism@gmail.com",
+            href: "emailto:info.imominofmism@gmail.com"
+>>>>>>> 24b5a17cc84972c92df9ef86c8575afeb7883ebd
         },  
         {
             label: "Block 8, State Secretariat Complex, Owerri, Imo State, Nigeria",
