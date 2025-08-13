@@ -5,7 +5,7 @@ const teamMembers = [
     name: 'Hon. Dr. Ernest Ibejiako',
     role: 'Commissioner',
     image: '/images/commisioner.jpg',
-    bio: 'Provides visionary leadership and strategic direction for the Ministry of Water Resources in Imo State.'
+    bio: 'Provides visionary leadership and strategic direction for the Ministry of Industry, Mines & Solid Minerals in Imo State.'
   },
   {
     name: 'OBILOR -CHIDI ANGELA  N.',
