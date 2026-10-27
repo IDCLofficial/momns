@@ -56,6 +56,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          src="https://pulse-track.onrender.com/tracker.min.js"
+          data-key="pk_live_3b21ec1fa76231c2b5d175f5"
+          defer
+        />
+      </head>
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(organizationJsonLd) }} />
         <GlobalLoader/>
