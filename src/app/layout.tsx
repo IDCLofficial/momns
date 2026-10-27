@@ -4,9 +4,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import GlobalLoader from '@/components/GlobalLoader'
+import { buildRootMetadata, jsonLd, organizationJsonLd } from "@/lib/seo";
 
 // optimized metadata for seo
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: {
     default: 'Imo State Ministry of Industry, Mines, and Solid Minerals',
     template: '%s | Imo State Ministry of Industry, Mines, and Solid Minerals',
@@ -45,6 +46,9 @@ export const metadata: Metadata = {
   },
 }
 
+export const metadata = buildRootMetadata(baseMetadata);
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -53,6 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(organizationJsonLd) }} />
         <GlobalLoader/>
         <Navbar/>
         {children}

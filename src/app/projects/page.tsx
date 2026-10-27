@@ -2,6 +2,14 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { TopHero } from "@/components/TopHero";
 import OngoingProjects from "./OngoingProjects";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Projects",
+  description: "Projects and programmes of the Ministry of Industry, Mines & Solid Minerals, Imo State Government.",
+  path: "/projects",
+});
+
 
 export default function Projects() {
     return (

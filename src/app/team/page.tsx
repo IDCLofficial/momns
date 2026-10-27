@@ -1,6 +1,14 @@
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Our Team",
+  description: "Meet the team at the Ministry of Industry, Mines & Solid Minerals, Imo State Government.",
+  path: "/team",
+});
+
 
 const teamMembers = [
   {
