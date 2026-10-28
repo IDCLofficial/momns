@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Units",
-  description: "Units - Ministry of Industry, Mines & Solid Minerals, Imo State Government.",
+  description: "Units - Ministry of Industry, Mines and Solid Minerals, Imo State Government.",
   path: "/units",
 });
 

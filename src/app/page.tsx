@@ -11,8 +11,8 @@ import Footer from "@/components/Footer";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: { absolute: "Ministry of Industry, Mines & Solid Minerals | Imo State Government" },
-  description: "Official website of the Ministry of Industry, Mines & Solid Minerals, Imo State Government: services, departments, projects, news and events.",
+  title: { absolute: "Imo State Ministry of Industry, Mines and Solid Minerals" },
+  description: "Solid minerals development, mining regulation and compliance, industrial parks and investment promotion in Imo State.",
   path: "/",
 });
 

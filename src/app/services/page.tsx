@@ -5,8 +5,8 @@ import ServiceCard from "./ServiceCard";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Services",
-  description: "Services offered by the Ministry of Industry, Mines & Solid Minerals of the Imo State Government.",
+  title: "Mining Regulation, Mineral Development and Industrial Parks",
+  description: "Mineral resource development, mining regulation and compliance, industrial parks and clusters, investment promotion and skills development in Imo State.",
   path: "/services",
 });
 

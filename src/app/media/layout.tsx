@@ -2,7 +2,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Media Gallery",
-  description: "Photo and media gallery of the Ministry of Industry, Mines & Solid Minerals, Imo State Government.",
+  description: "Photo and media gallery of the Ministry of Industry, Mines and Solid Minerals, Imo State Government.",
   path: "/media",
 });
 
